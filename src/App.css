@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.App{
+  height: 100%;
+}
+.grid__container{
+  display: grid;
+  grid-template-areas: 'header' 'main' 'footer';
+  grid-template-rows: 5rem 1fr 5rem;
+  grid-template-columns: 1fr;
+  height: 100%;
+}
+
+header{
+  grid-area: header;
+  background-color: #203040;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: .5rem;
+
+}
+header a{
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover{
+  color: #ff8000;
+}
+main{
+  grid-area: main;
+}
+footer{
+  grid-area: footer;
+  background-color: #203040;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+body, input, select, textarea {
+  font-size: 1.6rem;
+}
